@@ -1,4 +1,4 @@
-package Prabhu_Sir;
+package LabSys;
 
 
 import java.util.*;
@@ -13,7 +13,7 @@ class Studentt extends Labworkerr{
 	int noOfSubjects;
 	// ACCESS SPECIFIERS AKA PUBLIC I HAVE USED :):):):)
 	public Studentt() {
-		
+		super();
 	}
 	//CONSTRUCTOR OVERLOADING !!!!!!!!!!!
 	public Studentt(int rno,String name) {
@@ -62,7 +62,7 @@ class Studentt extends Labworkerr{
 	@Override
 	public void viewDetails() {
 		// TODO Auto-generated method stub
-		System.out.println("Student Name: " + this.getName());
+		System.out.println("\nStudent Name: " + name);
         System.out.println("Student Courses: ");
 		
 	}

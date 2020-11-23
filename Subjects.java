@@ -1,5 +1,5 @@
+package LabSys;
 
-package Prabhu_Sir;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class Subjects {
     private ArrayList<Professor> professorInCharge;
     private double numOfHours;
    
-    Subjects(String SubjectName, ArrayList<Teacher> teachersInCharge, double numOfHours) {
+    Subjects(String SubjectName, ArrayList<Professor> professorInCharge, double numOfHours) {
         this.setCourseName(SubjectName);
         this.setProfessorInCharge(professorInCharge);
         this.setNumOfHours(numOfHours);

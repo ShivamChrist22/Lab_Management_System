@@ -1,13 +1,12 @@
-package Prabhu_Sir;
+package LabSys;
 
+public class Professor extends Labworkerr extends Thread {
 
-public class Professor extends Labworkerr {
-
-    Professor() {
+    public Professor() {
         super();
     }
 
-    Professor(String Name, String Position) {
+    public Professor(String Name, String Position) {
         this.setName(Name);
         this.setPosition(Position);
     }
