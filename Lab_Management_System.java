@@ -84,15 +84,15 @@ public class Lab_Management_System {
 	            else if (ch == 2)
 	            {
 	                labworker = new Studentt();
-	                Studentt s1=new Studentt(1,"Shivam Tyagi");
-	                Studentt s2=new Studentt(1,"Shivam Tyagi",6);
+	                Studentt s1 = new Studentt();
+	                
 	                String attd[]= {"P","A","P","P","P","P","P","P","P","A"};
 
 	                s1.display();
-	                s2.display();
-	                s2.display(attd);
-	                s2.viewDetails();
-	                s2.Welcome();
+	                //s2.display();
+	                //s2.display(attd);
+	                s1.viewDetails();
+	                s1.Welcome();
 	            }
 	            else {
 	                System.out.println("Bye.");

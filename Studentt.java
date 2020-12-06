@@ -6,7 +6,7 @@ import java.lang.*;
 
 
 
-class Studentt extends Labworkerr{
+public class Studentt extends Labworkerr{
 	//    CLASS MEMBERS 
 	int rno;
 	String name;
@@ -16,18 +16,21 @@ class Studentt extends Labworkerr{
 		super();
 	}
 	//CONSTRUCTOR OVERLOADING !!!!!!!!!!!
-	public Studentt(int rno,String name) {
-		this.rno=rno;
-		this.name=name;
+	public Studentt(int id, String Name, String Position, String emailId, String password) {
+		this.set_id(id);
+		this.setName(Name);
+        this.setPosition(Position);
+        this.setEmailId(emailId);
+        this.setPassword(password);
 	}
 	
 	//CONSTRUCTOR OVERLOADING !!!!!!!!!!!
-	public Studentt(int rno,String name,int noOfSubjects) {
-		this.rno=rno;
-		this.name=name;
-		this.noOfSubjects=noOfSubjects;
-	}
-	
+//	public Studentt(int rno,String name,int noOfSubjects) {
+//		this.rno=rno;
+//		this.name=name;
+//		this.noOfSubjects=noOfSubjects;
+//	}
+//	
 	
 //	void read() {
 //		Scanner sc=new Scanner(System.in);
@@ -39,11 +42,12 @@ class Studentt extends Labworkerr{
 //	}
 	
 	//    MEMBER FUNCTIONS 
-	void display() {
+	public void display() {
 		System.out.println("\n########## DETAILS OF A "+name+"##########");
 		System.out.println("Name :"+name);
-		System.out.println("Roll/Seat Number :"+rno);
+		System.out.println("Roll/Seat Number :"+this.get_id());
 		System.out.println("No. of Subjects :"+ noOfSubjects);
+		System.out.println("Email Id of Student: "+ this.getEmailId());
 	}
 	
 	//FUNCTION OVERLOADING !!!!!!!!!!!

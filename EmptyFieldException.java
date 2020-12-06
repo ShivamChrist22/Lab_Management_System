@@ -1,0 +1,8 @@
+package LabSys;
+
+public class EmptyFieldException extends Exception {
+    EmptyFieldException(String message)
+    {
+        super(message);
+    }
+}
